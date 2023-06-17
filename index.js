@@ -359,10 +359,6 @@ function getFiltros() {
 * 
 */
 function mostrarClase1() {
-
-
-
-    //para clase con 2 atrubutos
     checkbox[4].parentNode.classList.remove('hide')//1° atributo unico clase 1
     checkbox[5].parentNode.classList.remove('hide')//2° atributo unico clase 1
     checkbox[6].parentNode.classList.add('hide')//1° atributo unico clase 2
@@ -379,10 +375,6 @@ function mostrarClase1() {
 * 
 */
 function mostrarClase2() {
-
-
-
-    //para clase con 2 atrubutos
     checkbox[4].parentNode.classList.add('hide')//1° atributo unico clase 1
     checkbox[5].parentNode.classList.add('hide')//2° atributo unico clase 1
     checkbox[6].parentNode.classList.remove('hide')//1° atributo unico clase 2
@@ -397,15 +389,10 @@ function mostrarClase2() {
 * 
 */
 function mostrarTodo() {
-
-
-
-    //para clase con 2 atrubutos
     checkbox[4].parentNode.classList.remove('hide')//1° atributo unico clase 1
     checkbox[5].parentNode.classList.remove('hide')//2° atributo unico clase 1
     checkbox[6].parentNode.classList.remove('hide')//1° atributo unico clase 2
     checkbox[7].parentNode.classList.remove('hide')//2° atributo unico clase 2
-
 }
 
 
@@ -479,23 +466,16 @@ function validarVehiculo() {
 }
 function validarClase1() {
     if (validarVehiculo() &&
-
-        //para 2 parametros
         inputsAbm[4].style.borderColor && inputsAbm[4].style.borderColor == 'green' &&
         inputsAbm[5].style.borderColor && inputsAbm[5].style.borderColor == 'green') {
-
         return true
     }
     return false
 }
 function validarClase2() {
     if (validarVehiculo() &&
-
-        //para 2 parametros
         inputsAbm[6].style.borderColor && inputsAbm[6].style.borderColor == 'green' &&
         inputsAbm[7].style.borderColor && inputsAbm[7].style.borderColor == 'green') {
-
-
         return true
     }
     return false
@@ -677,9 +657,6 @@ categoria.addEventListener('change', eventoCambioCategoria)
 divFiltro.addEventListener('click', eventoGetCheckbox)
 
 btnAbm.addEventListener('click', eventoMostrarAbm)
-
-//tabla.addEventListener('dblclick', eventoSeleccionarVehiculo)
-
 
 //--------------------------------------------eventos de form abm--------------------------------------------
 
