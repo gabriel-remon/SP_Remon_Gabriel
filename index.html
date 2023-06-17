@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="form-container">
+        <p>Form Datos</p>
+        <span>Filtrar Por: </span>
+        <select name="" id="categoria">
+            <option value="todos">todos</option>
+            <option value="aereo">Aereo</option>
+            <option value="terrestre">Terrestre</option>
+        </select>
+        <div id="filtros">
+            <p>Mostrar Columnas:</p>
+            <label>
+                <input type="checkbox" name="id" value="id" checked>ID
+            </label>
+
+            <label>
+                <input type="checkbox" name="modelo" value="modelo" checked>Modelo
+            </label>
+
+            <label>
+                <input type="checkbox" name="anoFab" value="anoFab" checked>Año fabricacion
+            </label>
+
+            <label>
+                <input type="checkbox" name="velMax" value="velMax" checked>Velocidad maxima
+            </label>
+
+
+            <label>
+                <input type="checkbox" name="altMax" value="altMax" checked>altura Maxima
+            </label>
+
+            <label>
+                <input type="checkbox" name="autonomia" value="autonomia" checked>Autonomia
+            </label>
+
+            <label>
+                <input type="checkbox" name="cantPue" value="cantPue" checked>cantidad Puertas
+            </label>
+
+
+            <label>
+                <input type="checkbox" name="cantRue" value="cantRue" checked>cantidad de Ruedas
+            </label>
+
+          
+
+        </div>
+
+        <table id="tabla">
+
+        </table>
+
+        <button id="getAbm"> Agregar</button>
+    </div>
+
+    <form id="abm" class="hide">
+        <p>Formulario ABM</p>
+        <p>accion: <strong id="accionAbm"></strong> vehiculo</p>
+
+        <div id="vehiculo">
+            <label for="id">Id:
+                <input type="text" id="personaId" name="id" readonly>
+            </label>
+            <br>
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo">
+            <br>
+            <label for="anoFab">año fabricacion:</label>
+            <input type="text" id="anoFab" name="anoFab">
+            <br>
+            <label for="velMax">velocidad maxima:</label>
+            <input type="text" id="velMax" name="velMax">
+            <br>
+        </div>
+
+        <select name="" id="categoriaAbm">
+            <option value="aereo">Aereo</option>
+            <option value="terrestre">Terrestre</option>
+        </select>
+
+        <div id="clase1Abm">
+            <label for="altMax">altura maxima:</label>
+            <input type="text" id="altMax" name="altMax">
+            <br>
+            <label for="autonomia">autonomia:</label>
+            <input type="text" id="autonomia" name="autonomia">
+            <br>
+           
+        </div>
+
+        <div id="clase2Abm" class="hide">
+            <label for="cantPue">cantidad de puertas:</label>
+            <input type="text" id="cantPue" name="cantPue">
+            <br>
+            <label for="cantRue">cantidad de ruedas:</label>
+            <input type="text" id="cantRue" name="cantRue">
+            <br>
+            
+        </div>
+        <button id="aceptar" type="submit" name="action" value="aceptar">Aceptar</button>
+        <button id="cancelar" type="submit" name="action" value="cancelar">Cancelar</button>
+    </form>
+</body>
+<script src="./index.js" type="module"></script>
+
+</html>
